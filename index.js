@@ -120,6 +120,7 @@ const historical = books.forEach((book)=>{
   const includes = book.genre.includes('historical')
   if(includes === true){
     lh.push(' ' + book.name);
-}})
+  }
+})
 console.log(lh + ' are all historical')
 
