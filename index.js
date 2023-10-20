@@ -105,15 +105,13 @@ console.log(before1900.length + ' books were written before 1900')
 //was there at least one book published within the last 100 years?
 const last100 = books.filter((year)=>{
   age = 2023 - year.publishDate
-  if (age<100){console.log('There is at least one book published within the last 100 years')}
-})
+  if (age<100){console.log('There is at least one book published within the last 100 years')}})
 //was every book published within the last 100 years?
 const within100 = books.filter((book)=> book.publishDate > 1923)
 if(within100.length >= books.length){
   console.log('Every book was published within the last 100 years');
 }  else if(within100.length < books.length){
-  console.log('Not all the books were written within the last 100 years');
-}
+  console.log('Not all the books were written within the last 100 years');}
 //print a list of books that "includes" the genre historical
 const lh = []
 const historical = books.forEach((book)=>{
@@ -123,4 +121,3 @@ const historical = books.forEach((book)=>{
   }
 })
 console.log(lh + ' are all historical')
-
